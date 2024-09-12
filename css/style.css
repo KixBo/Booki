@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -16,7 +17,6 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
     flex-direction: column;
 }
 
@@ -57,7 +57,7 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
 }
 
 /****** Header ******/
@@ -71,11 +71,10 @@ a {
     display:flex;
     list-style-type: none;
     gap: 60px;
-    padding-right: 50px;
 }
 
 .logo-container {
-    padding: 30px 50px;
+    padding: 30px 0;
 }
 
 img {
@@ -105,6 +104,21 @@ nav ul li a:hover::before {
 
 nav ul li a:hover {
     color: var(--main-color);
+}
+
+/****** Info Groupe ******/
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.info-group p {
+    font-size: 19px;
+}
+
+.info-group {
+    margin: 30px 0 35px 0;
 }
 
 
