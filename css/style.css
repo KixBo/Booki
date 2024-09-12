@@ -115,14 +115,14 @@ h1 {
 }
 
 .info-group p {
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .headline {
     margin: 30px 0 35px 0;
 }
 
-/*** Search-bar ***/
+/*** Search Bar ***/
 
 form {
     display: flex;
@@ -164,6 +164,45 @@ input {
     color: #FFF;
     display: none;
 }
+
+/*** Filter Bar ***/
+
+.filter-bar-container p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.filter-bar-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.group-button {
+    display: flex;
+    gap: 15px;
+}
+
+.filter-button {
+    margin: 0;
+    padding: 15px 19px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #FFF;
+    border-radius: 25px;
+    border: #D9D9D9 2px solid;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #DEEBFF;
+}
+
+.filter-button .fa-solid {
+    margin-right: 10px;
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
