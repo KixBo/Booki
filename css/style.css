@@ -81,28 +81,14 @@ img {
     width: 40%
 }
 
-nav ul {
-    margin-top: 16px;
+nav ul li {
+    border-top: solid 0px var(--main-color);
+    padding-top: 16px;
 }
 
-nav ul li a {
-    position: relative;
-}
-
-nav ul li a::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 0;
-    background-color: var(--main-color);
-    bottom: 30px;
-}
-
-nav ul li a:hover::before {
-    width: 100%;
-}
-
-nav ul li a:hover {
+nav ul li:hover {
+    padding-top: 14px;
+    border-top-width: 2px;
     color: var(--main-color);
 }
 
@@ -147,6 +133,10 @@ input {
     border-left: none;
     border-right: none;
     outline: none;
+}
+
+input::placeholder {
+    color: #000;
 }
 
 .search-button {
