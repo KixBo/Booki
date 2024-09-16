@@ -129,7 +129,7 @@ input {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    border: #F2F2F2 1px solid;
+    border: var(--main-bg-color) 1px solid;
     border-left: none;
     border-right: none;
     outline: none;
@@ -181,7 +181,7 @@ input::placeholder {
     font-weight: bold;
     background-color: #FFF;
     border-radius: 25px;
-    border: #D9D9D9 2px solid;
+    border: var(--filter-bg-color) 2px solid;
     cursor: pointer;
 }
 
@@ -203,7 +203,7 @@ input::placeholder {
 }
 
 .icon-container {
-    border: solid 1px #D9D9D9;
+    border: solid 1px var(--filter-bg-color);
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -225,11 +225,56 @@ input::placeholder {
     box-sizing: border-box;
 }
 
+.card-subtitle {
+    font-size: 14px;
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
 
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergements-cards a {
+    display: block;
+    width: 32%;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 114px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin-bottom: 8px;
+}
+
+#more {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
 
 
 /****** Populaires ***********/
