@@ -322,6 +322,37 @@ input::placeholder {
     margin-bottom: 5px;
 }
 
+/****** Activity ******/
+
+.activity-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.activity-cards .card {
+    padding: 0;
+    width: 25%;
+}
+
+.activity-cards .card img {
+    height: 380px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activity-cards .card h3 {
+    padding: 20px 19px;
+}
+
+.activity {
+    margin-top: 35px;
+    padding: 30px;
+}
+
+.activity h2 {
+    margin-bottom: 30px;
+}
 
 
 
