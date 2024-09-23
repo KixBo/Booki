@@ -326,10 +326,12 @@ input::placeholder {
 
 .activity-cards a {
   width: 24%;
+  display: flex;
 }
 
 .activity-cards .card {
   padding: 0;
+  flex-grow: 1;
 }
 
 .activity-cards .card img {
@@ -341,7 +343,7 @@ input::placeholder {
 }
 
 .activity-cards .card h3 {
-  padding: 19px 20px;
+  padding: 20px 19px;
 }
 
 .activity {
@@ -385,7 +387,6 @@ footer {
 /****** Medium devices (tablets, less/equal than 1024px) ******/
 
 @media (max-width: 1024px) {
-
   /*** FILTER BAR ***/
 
   .filter-button {
@@ -427,7 +428,7 @@ footer {
     margin-top: 20px;
   }
 
-/*
+  /*
                                                     TODO : Responsive
  */
 
@@ -437,6 +438,15 @@ footer {
     height: 200px;
   }
 
+  .activity-cards a:nth-child(1) .card h3,
+  .activity-cards a:nth-child(2) .card h3 {
+    padding: 25.5px 19px;
+  }
+
+  .activity-cards a:nth-child(3) .card h3,
+  .activity-cards a:nth-child(4) .card h3 {
+    padding: 16px 19px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
