@@ -136,7 +136,7 @@ input::placeholder {
   margin-bottom: 35px;
 }
 
-.group-button {
+.buttons-container {
   display: flex;
   gap: 15px;
 }
@@ -157,7 +157,7 @@ input::placeholder {
   background-color: var(--filter-bg-color);
 }
 
-.group-button .fa-solid {
+.buttons-container .fa-solid {
   color: var(--main-color);
   font-size: 1.25rem;
 }
@@ -191,7 +191,7 @@ input::placeholder {
 
 .accommodation-and-popular section {
   background-color: var(--main-bg-color);
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 30px;
   box-sizing: border-box;
 }
@@ -324,9 +324,12 @@ input::placeholder {
   gap: 30px;
 }
 
+.activity-cards a {
+  width: 24%;
+}
+
 .activity-cards .card {
   padding: 0;
-  width: 24%;
 }
 
 .activity-cards .card img {
@@ -334,10 +337,11 @@ input::placeholder {
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  display: block;
 }
 
 .activity-cards .card h3 {
-  padding: 20px 19px;
+  padding: 19px 20px;
 }
 
 .activity {
@@ -378,12 +382,24 @@ footer {
 
 /****** RESPONSIVE ******/
 
-/*
-                                              TODO : Responsive à faire 
- */
+/****** Medium devices (tablets, less/equal than 1024px) ******/
 
-/* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+  /*** FILTER BAR ***/
+
+  .filter-button {
+    font-size: 1rem;
+  }
+
+  .filter-bar-container {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  /****** ACCOMMODATION AND POPULAR ******/
+
   .accommodation-and-popular {
     flex-direction: column;
   }
@@ -399,21 +415,28 @@ footer {
 
   .popular-cards-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .popular-cards-container a {
-    width: 30%;
+    width: 32%;
   }
 
-  .popular-cards-container .card-title {
-    font-size: 14px;
+  .popular-cards-container .card {
+    margin-top: 20px;
   }
 
-  .popular-cards-container .card-subtitle {
-    font-size: 13px;
+/*
+                                                    TODO : Responsive
+ */
+
+  /****** ACTIVITY ******/
+
+  .activity-cards .card img {
+    height: 200px;
   }
+
 }
 
 /* Small devices (phones, less than 768px) */
