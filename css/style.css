@@ -51,13 +51,14 @@ a {
 }
 
 nav ul li {
-  border-top: solid 0px var(--main-color);
+  border-top: solid 0px var(--main-bg-color);
   padding-top: 16px;
 }
 
 nav ul li:hover {
   padding-top: 14px;
   border-top-width: 2px;
+  border-color: var(--main-color);
   color: var(--main-color);
 }
 
@@ -485,7 +486,7 @@ footer {
     padding: 0;
     flex: 1;
     text-align: center;
-    border-bottom: solid 0px var(--main-color);
+    border-bottom: solid 2px var(--main-bg-color);
     padding-bottom: 17px;
     border-top: none;
   }
@@ -494,6 +495,7 @@ footer {
     padding-bottom: 15px;
     border-bottom-width: 2px;
     color: var(--main-color);
+    border-color: var(--main-color);
   }
 
   /****** INFO GROUP ******/
