@@ -20,12 +20,10 @@ html {
 }
 
 .main-container {
-  width: 100%;
   max-width: 1440px;
   min-width: 320px;
   padding: 0 50px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 a {
@@ -35,20 +33,21 @@ a {
 
 /****** HEADER ******/
 
-.header-container {
+header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
-.header-container nav ul {
+header nav ul {
   display: flex;
   list-style-type: none;
   gap: 68px;
 }
 
-.header-container img {
+header img {
   height: 19px;
-  padding: 30px 0;
+  margin: 30px 0;
 }
 
 nav ul li {
@@ -73,11 +72,7 @@ h1 {
   font-weight: 700;
 }
 
-.info-group {
-  margin-top: 30px;
-}
-
-.headline {
+.headline-text {
   margin-bottom: 35px;
 }
 
@@ -126,16 +121,16 @@ input::placeholder {
 
 /*** FILTER BAR ***/
 
-.filter-txt {
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-
 .filter-bar-container {
   display: flex;
   gap: 15px;
   align-items: center;
   margin-bottom: 35px;
+}
+
+.filter-txt {
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 .buttons-container {
@@ -194,7 +189,6 @@ input::placeholder {
 
 .accommodation-and-popular section {
   border-radius: 15px;
-  box-sizing: border-box;
 }
 
 .section-title {
@@ -254,13 +248,11 @@ input::placeholder {
 }
 
 .accommodation-cards-container .card {
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .accommodation-cards-container img {
-  width: 100%;
   height: 114px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -360,7 +352,6 @@ input::placeholder {
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  display: block;
 }
 
 .activity-cards .card h3 {
@@ -416,7 +407,6 @@ footer {
 /****** Medium devices (tablets, less/equal than 1024px) ******/
 
 @media (max-width: 1024px) {
-
   /*** GENERAL ***/
 
   html {
@@ -470,14 +460,14 @@ footer {
     height: 200px;
   }
 
-  .activity-cards a:nth-child(1) .card h3,
-  .activity-cards a:nth-child(2) .card h3 {
-    padding: 25.5px 19px;
-  }
-
-  .activity-cards a:nth-child(3) .card h3,
-  .activity-cards a:nth-child(4) .card h3 {
+  .activity-cards .card h3 {
     padding: 16px 19px;
+  }
+}
+
+@media (max-width: 789px) {
+  html {
+    font-size: 15px;
   }
 }
 
@@ -491,24 +481,20 @@ footer {
 
   /****** HEADER ******/
 
-  .header-container {
+  header {
     flex-direction: column;
     align-items: center;
   }
 
-  .header-container img {
-    width: 61px;
-  }
-
-  .header-container nav {
+  header nav {
     width: 100%;
   }
 
-  .header-container nav ul {
+  header nav ul {
     gap: 0;
   }
 
-  .header-container nav ul li {
+  header nav ul li {
     padding: 0;
     flex: 1;
     text-align: center;
@@ -520,17 +506,13 @@ footer {
   nav ul li:hover {
     padding-bottom: 15px;
     border-bottom-width: 2px;
-    color: var(--main-color);
-    border-color: var(--main-color);
+    padding-top: 0;
   }
 
-  /****** INFO GROUP ******/
+  /*** INFO GROUP ***/
 
   .info-group {
-    margin-top: 30px;
     padding: 0 20px;
-    display: flex;
-    flex-direction: column;
   }
 
   /*** SEARCH BAR ***/
@@ -556,10 +538,6 @@ footer {
 
   /*** FILTER BAR ***/
 
-  .filter-button {
-    font-size: 0.875rem;
-  }
-
   .buttons-container {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -569,6 +547,7 @@ footer {
 
   .filter-button {
     width: calc(50% - 10px);
+    font-size: 0.875rem;
   }
 
   /****** ACCOMMODATION AND POPULAR ******/
@@ -609,10 +588,6 @@ footer {
     background-color: #fff;
   }
 
-  .accommodation-cards-container {
-    flex-direction: column;
-  }
-
   .accommodation-cards-container a {
     width: 100%;
     margin-top: 15px;
@@ -637,10 +612,7 @@ footer {
     height: 141px;
   }
 
-  .activity-cards a:nth-child(1) .card h3,
-  .activity-cards a:nth-child(2) .card h3,
-  .activity-cards a:nth-child(3) .card h3,
-  .activity-cards a:nth-child(4) .card h3 {
+  .activity-cards .card h3 {
     padding: 20px 19px;
   }
 
@@ -658,10 +630,8 @@ footer {
   }
 }
 
-@media (max-width: 364px) { 
-
+@media (max-width: 348px) {
   .filter-button {
     padding: 0 12px;
   }
-
 }
